@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayWorld</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">◆</span> PLAY<span>WORLD</span></div>
+      <div class="top-actions">
+        <div class="coins">🪙 <b id="coins">1.250</b></div>
+        <button class="icon-btn" title="Notificações">🔔</button>
+        <button class="icon-btn" title="Configurações">⚙️</button>
+      </div>
+    </header>
+
+    <main id="page"></main>
+
+    <nav class="bottom-nav">
+      <button data-page="home" class="nav-btn active"><span>⌂</span>Início</button>
+      <button data-page="games" class="nav-btn"><span>🎮</span>Jogos</button>
+      <button data-page="skin" class="nav-btn"><span>🎨</span>Skin</button>
+      <button data-page="play" class="nav-btn"><span>▶</span>Jogar</button>
+      <button data-page="profile" class="nav-btn"><span>●</span>Perfil</button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="modal-overlay" class="modal-overlay"></div>
+  <div id="modal" class="modal"></div>
+  <script src="app.js"></script>
+</body>
+</html>
